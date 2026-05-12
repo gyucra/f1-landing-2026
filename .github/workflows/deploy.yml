@@ -22,8 +22,11 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
+      - name: 🧪 Correr Tests
+        run: npm run test:run
+
       - name: Build
         run: npm run build
 
       - name: ✅ Build exitoso
-        run: echo "Build completado correctamente"
+        run: echo "Tests y Build completados correctamente"
